@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+
+<VBox fx:controller="club.hsspace.i2hs.controller.OuterChainController" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="100.0" prefWidth="381.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="20.0">
+         <children>
+            <TextField fx:id="linkThum" editable="false" text="http://" />
+            <Button mnemonicParsing="false" onAction="#copyThum" text="复制缩略链接" />
+            <Label fx:id="succThum" text="复制成功" visible="false" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="20.0">
+         <children>
+            <TextField fx:id="link" editable="false" text="http://" />
+            <Button mnemonicParsing="false" onAction="#copy" text="复制原图链接" />
+            <Label fx:id="succ" text="复制成功" visible="false" />
+         </children>
+      </HBox>
+   </children>
+</VBox>

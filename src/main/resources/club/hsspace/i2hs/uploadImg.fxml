@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox fx:id="vBox" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="club.hsspace.i2hs.controller.UploadImgController">
+   <children>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="15.0">
+         <children>
+            <Label text="图片备注">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <TextField fx:id="name" prefWidth="200.0" promptText="eg: 一张漂亮的照片" />
+            <Label prefWidth="150.0" text="一句话描述你的图片(可选)" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="15.0">
+         <children>
+            <Label text="图片标签">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <TextField fx:id="tag" prefWidth="200.0" promptText="eg: 风景,可爱,2022" />
+            <Label prefWidth="150.0" text="多个标签使用&quot;,&quot;分割(可选)" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="15.0">
+         <children>
+            <Label text="上传图片">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <TextField fx:id="path" prefWidth="200.0" promptText="eg: N:/pic.jpg" />
+            <Button defaultButton="true" mnemonicParsing="false" onAction="#fromFile" prefWidth="150.0" text="从文件选择" />
+         </children>
+      </HBox>
+   </children>
+</VBox>
